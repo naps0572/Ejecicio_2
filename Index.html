@@ -4,35 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 80%;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .destination {
+            margin-bottom: 40px;
+        }
+
+        .destination h2 {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .destination img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .destination p {
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .destination .coordinates {
+            font-style: italic;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <div>Destinos turísticos</div>
-    
-    <div>1. Seúl, Corea del Sur</div>
-    <div><img src="https://a.storyblok.com/f/112937/567x464/b521a9ee4b/visit_seoul_web.jpg/m/620x0/filters:quality(70)/" alt=""></div>
-    <div>Descripción: Oficialmente Ciudad Especial de Seúl, es la capital de Corea del Sur desde la creación de esta república en 1948, la capital histórica de Corea desde hace más de 600 años y la ciudad más poblada de la península de Corea.</div>
-    <div>Coordenadas: 37°34′N 126°59′E / 37.56, 126.99</div>
-    
-    <div>2. París, Francia</div>
-    <div><img src="https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg" alt=""></div>
-    <div>Descripción: París, la capital de Francia, es una importante ciudad europea y un centro mundial del arte, la moda, la gastronomía y la cultura. Su paisaje urbano del siglo XIX está entrecruzado por amplios bulevares y el río Sena.</div>
-    <div>Coordenadas: 48°51′24″N 2°21′08″E﻿ / ﻿48.856666666667, 2.3522222222222</div>
-    
-    <div>3. Barcelona, España</div>
-    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDz_lJT38mK4lzT51Efy2HpuS80nThfKZ9BA&s" alt=""></div>
-    <div>Descripción: Barcelona, la capital cosmopolita de la región de Cataluña en España, es conocida por su arte y arquitectura. La fantástica iglesia de la Sagrada Familia y otros hitos modernistas diseñados por Antoni Gaudí adornan la ciudad.</div>
-    <div>Coordenadas: 41°23'19.6'' N 2°9.539' E</div>
-    
-    <div>4. Tokio, Japón</div>
-    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6nGdskY9dSS3S8yUPn7ep_DwvNO5vJ2vsfA&s" alt=""></div>
-    <div>Descripción: Tokio, la capital de Japón, mezcla lo ultramoderno con lo tradicional, desde rascacielos iluminados con neón hasta templos históricos. El Palacio Imperial y los templos antiguos coexisten con distritos comerciales vibrantes y vida nocturna animada.</div>
-    <div>Coordenadas: 35°41′N 139°41′E / 35.68, 139.68</div>
-    
-    <div>5. Nueva York, Estados Unidos</div>
-    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJJyn_DR6mTTC09kmEBHkT7wt-e-oNzrF6gg&s" alt=""></div>
-    <div>Descripción: Nueva York es una de las ciudades más icónicas del mundo, conocida por su influencia en la cultura, las finanzas, la moda y los medios. Lugares emblemáticos como Times Square, Central Park y el Empire State Building son reconocidos mundialmente.</div>
-    <div>Coordenadas: 40°42′46″N 74°00′21″W / 40.7127778, -74.0058333</div>
-    
-    
+    <div class="container">
+        <h1>Destinos Turísticos</h1>
+
+        <div class="destination">
+            <h2>1. Seúl, Corea del Sur</h2>
+            <img src="https://a.storyblok.com/f/112937/567x464/b521a9ee4b/visit_seoul_web.jpg/m/620x0/filters:quality(70)/" alt="Seúl, Corea del Sur">
+            <p>Descripción: Oficialmente Ciudad Especial de Seúl, es la capital de Corea del Sur desde la creación de esta república en 1948, la capital histórica de Corea desde hace más de 600 años y la ciudad más poblada de la península de Corea.</p>
+            <p class="coordinates">Coordenadas: 37°34′N 126°59′E / 37.56, 126.99</p>
+        </div>
+
+        <div class="destination">
+            <h2>2. París, Francia</h2>
+            <img src="https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg" alt="París, Francia">
+            <p>Descripción: París, la capital de Francia, es una importante ciudad europea y un centro mundial del arte, la moda, la gastronomía y la cultura. Su paisaje urbano del siglo XIX está entrecruzado por amplios bulevares y el río Sena.</p>
+            <p class="coordinates">Coordenadas: 48°51′24″N 2°21′08″E﻿ / ﻿48.856666666667, 2.3522222222222</p>
+        </div>
+
+        <div class="destination">
+            <h2>3. Barcelona, España</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDz_lJT38mK4lzT51Efy2HpuS80nThfKZ9BA&s" alt="Barcelona, España">
+            <p>Descripción: Barcelona, la capital cosmopolita de la región de Cataluña en España, es conocida por su arte y arquitectura. La fantástica iglesia de la Sagrada Familia y otros hitos modernistas diseñados por Antoni Gaudí adornan la ciudad.</p>
+            <p class="coordinates">Coordenadas: 41°23'19.6'' N 2°9.539' E</p>
+        </div>
+
+        <div class="destination">
+            <h2>4. Tokio, Japón</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6nGdskY9dSS3S8yUPn7ep_DwvNO5vJ2vsfA&s" alt="Tokio, Japón">
+            <p>Descripción: Tokio, la capital de Japón, mezcla lo ultramoderno con lo tradicional, desde rascacielos iluminados con neón hasta templos históricos. El Palacio Imperial y los templos antiguos coexisten con distritos comerciales vibrantes y vida nocturna animada.</p>
+            <p class="coordinates">Coordenadas: 35°41′N 139°41′E / 35.68, 139.68</p>
+        </div>
+
+        <div class="destination">
+            <h2>5. Nueva York, Estados Unidos</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJJyn_DR6mTTC09kmEBHkT7wt-e-oNzrF6gg&s" alt="Nueva York, Estados Unidos">
+            <p>Descripción: Nueva York es una de las ciudades más icónicas del mundo, conocida por su influencia en la cultura, las finanzas, la moda y los medios. Lugares emblemáticos como Times Square, Central Park y el Empire State Building son reconocidos mundialmente.</p>
+            <p class="coordinates">Coordenadas: 40°42′46″N 74°00′21″W / 40.7127778, -74.0058333</p>
+        </div>
+    </div>
 </body>
 </html>
